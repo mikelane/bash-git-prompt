@@ -88,7 +88,13 @@ cd ~
 git clone https://github.com/mikelane/bash-git-prompt.git .bash-git-prompt
 ```
 
-- Source the file `gitprompt.sh` from `~/.bashrc`
+- Source the file `gitprompt.sh` from `~/.bashrc` or `~/.bash_profile` by adding the following:
+```
+if [ -f ${HOME}/.bash-git-prompt/gitprompt.sh ]; then
+  GIT_PROMPT_THEME=Default
+  source ${HOME}/.bash-git-prompt/gitprompt.sh
+fi
+```
 
 ### Configuration
 
@@ -287,7 +293,7 @@ Please leave a comment on the issue, that you want to fix it, so others know, th
 Pull requests are welcome. I will check them and merge them, if I think they help the project.
 
 ## Donations
-I accept tips through [Gittip][tip] and [Flattr][flattr].
+The original author accept tips through [Gittip][tip] and [Flattr][flattr].
 
 [![Gittip](https://img.shields.io/gittip/magicmonty.svg?style=flat)](https://www.gittip.com/magicmonty/)
 [![Flattr](http://api.flattr.com/button/flattr-badge-large.png)](https://flattr.com/submit/auto?user_id=magicmonty&url=https%3A%2F%2Fgithub.com%2Fmagicmonty%2Fbash-git-prompt)
