@@ -79,28 +79,13 @@ The symbols are as follows:
 
 ## Installation
 
-### via [Homebrew][homebrew] on Mac OS X
-
-- Run `brew update`
-
-- Run `brew install bash-git-prompt` for the last stable release or `brew install --HEAD bash-git-prompt` for the 
-   latest version directly from the repository
-
-- Now you can source the file in your `~/.bashrc` as follows:
-
-```sh
-if [ -f "$(brew --prefix)/opt/bash-git-prompt/share/gitprompt.sh" ]; then
-    source "$(brew --prefix)/opt/bash-git-prompt/share/gitprompt.sh"
-fi
-```
-
 ### via Git clone
 
 - Clone this repository to your home directory.
 
 ```sh
 cd ~
-git clone https://github.com/magicmonty/bash-git-prompt.git .bash-git-prompt
+git clone https://github.com/mikelane/bash-git-prompt.git .bash-git-prompt
 ```
 
 - Source the file `gitprompt.sh` from `~/.bashrc`
